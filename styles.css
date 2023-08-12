@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19vh;
+    font-size: 13vh;
+    font-weight: bold;
+    border: 3px solid #716f6f;
+    color: grey;
+    background-color: #efefef;
+    box-shadow: 0px 0px 8px #888888;
+}
+#game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+#gameboard {
+    width: 305px;
+    height: 305px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #efefef;
+    border: solid 2px #716f6f;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    box-shadow: 0px 0px 8px #888888;
+    margin:0.6px;
+}
+.square:hover {
+    box-shadow: 0px 0px 15px #888888;
+  }
+
+.circle{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 9px solid blue;
+    box-sizing: border-box;
+}
+
+.cross{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.cross:before, .cross:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+.cross:before{
+    left: 50%;
+    width: 20%;
+    margin-left: -10%;
+    height: 100%;
+}
+.cross:after{
+    top: 50%;
+    height: 20%;
+    margin-top: -10%;
+    width: 100%;
+}
+#info{
+    color:#486255;
+    font-size:50px;
+}
